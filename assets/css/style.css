@@ -3068,3 +3068,18 @@ a.label.blog:hover{
     background-color: #449d44;
     border-color: #255625;
 }
+
+ul {
+    padding-left: 2em;
+}
+ul li {
+    list-style-type: none;
+    font-size: 17px;
+    line-height: 1.5;
+    margin-top: 3px;
+}
+ul li span {
+    display: block;
+    margin-left: -0.5em;
+    color: #000;
+}
