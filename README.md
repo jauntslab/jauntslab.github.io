@@ -1,2 +1,2 @@
-# Januts homepage
+# Jaunts homepage
 
