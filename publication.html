@@ -69,16 +69,17 @@
 
   <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top">
-    <div class="container d-flex align-items-center justify-content-between py-3">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo fw-bold text-dark" style="font-size: 24px;">JAUNTS Lab</a>
-      <nav class="navbar d-none d-md-block">
-        <ul class="d-flex gap-4 list-unstyled mb-0">
+      <nav id="navbar" class="navbar" style="color: white">
+        <ul style="color: white">
           <li><a href="people.html">People</a></li>
           <li><a href="publication.html">Publications</a></li>
           <li><a href="research.html">Research</a></li>
           <li><a href="contact.html" class="btn btn-outline-dark btn-sm px-3">Join Us</a></li>
         </ul>
-      </nav>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
     </div>
   </header>
 
@@ -133,11 +134,12 @@
 
         grouped[year].forEach(pub => {
           const li = document.createElement("li");
-          let linkHTML = pub.link
-            ? `<a class="pub_title" href="${pub.link}" target="_blank">${pub.title}</a>`
-            : `<span class="pub_title">${pub.title}</span>`;
 
-          let toolLinks = [
+          // ✅ link 없어도 href="" 로 처리
+          const href = pub.link ? pub.link : "";
+          const linkHTML = `<a class="pub_title" href="${href}" target="_blank">${pub.title}</a>`;
+
+          const toolLinks = [
             pub.project ? `<a class="icon project label label-info" href="${pub.project}" target="_blank">Project</a>` : '',
             pub.github ? `<a class="icon code label label-info" href="${pub.github}" target="_blank">Github</a>` : '',
             pub.poster ? `<a class="icon misc label label-info" href="${pub.poster}" target="_blank">Poster</a>` : '',
@@ -148,10 +150,9 @@
           li.innerHTML = `
             <p>
               ${linkHTML}<br>
-              ${pub.authors}<br/>
-              <b>${pub.venue}</b><br>
+              ${pub.authors || ''}<br/>
+              <b>${pub.venue || ''}</b><br>
               ${toolLinks}
-              <!-- Optional meta tag if you want to include for parsing -->
               <meta title="${pub.title}" venue="${pub.venue}" year="${pub.year}" />
             </p>
           `;
@@ -163,6 +164,7 @@
     })
     .catch(error => console.error("Failed to load publication data:", error));
 </script>
+
 
 
 </body>
