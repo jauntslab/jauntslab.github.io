@@ -6,24 +6,49 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="Jaunts Lab" name="author">
 
-  <title>Jaunts Laboratory</title>
-  <meta content="Jaunts Laboratory" name="description">
-  <meta content="jaunts, jay pujara, usc" name="keywords">
+  <title>JAUNTS Lab | USC ISI | Knowledge Graphs, NLP, Reasoning</title>
+  <meta name="description" content="JAUNTS Lab at USC ISI, led by Prof. Jay Pujara, conducts research in Knowledge Graphs, NLP, Commonsense Reasoning, and Responsible AI.">
+  <meta name="keywords" content="JAUNTS Lab, Jay Pujara, USC, ISI, Knowledge Graph, NLP, Commonsense Reasoning, AI Research, Natural Language Processing, Responsible AI, USC ISI Lab, Kian Ahrabian, Eric Boxer, Yifan Jiang, Dong-Ho Lee, Pei Zhou, Avijit Thawani, Kexuan Sun">
 
-  <!-- TYPE BELOW IS PROBABLY: 'website' or 'article' or look on https://ogp.me/#types -->
-  <meta property="og:type" content='website'/>
+  <!-- Open Graph -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="JAUNTS Lab | USC ISI"/>
+  <meta property="og:description" content="Research in knowledge representation, language understanding, and AI for social good. Led by Prof. Jay Pujara at USC ISI."/>
 
-  <link href="images/favicon.png" rel="icon">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="JAUNTS Lab @ USC ISI">
+  <meta name="twitter:description" content="NLP, Knowledge Graphs, Commonsense AI, and Responsible Machine Learning research.">
+
+  <!-- Schema.org Organization (Structured Data) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ResearchOrganization",
+    "name": "JAUNTS Lab",
+    "url": "https://www.jauntslab.org/",
+    "logo": "https://www.jauntslab.org/images/logo.png",
+    "department": {
+      "@type": "CollegeOrUniversity",
+      "name": "University of Southern California"
+    },
+    "member": [
+      {
+        "@type": "Person",
+        "name": "Jay Pujara",
+        "jobTitle": "Professor",
+        "url": "https://www.jaypujara.org"
+      }
+    ]
+  }
+  </script>
 
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <!-- <link href="assets/vendor/aos/aos.css" rel="stylesheet"> -->
@@ -44,95 +69,85 @@
 
   <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top">
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-
-      <nav id="navbar" class="navbar" style="color: white">
-        <ul  style="color: white">
-          <li><a href="index.html">Jaunts Lab</a></li>
+    <div class="container d-flex align-items-center justify-content-between py-3">
+      <a href="index.html" class="logo fw-bold text-dark" style="font-size: 24px;">JAUNTS Lab</a>
+      <nav class="navbar d-none d-md-block">
+        <ul class="d-flex gap-4 list-unstyled mb-0">
           <li><a href="people.html">People</a></li>
-          <li><a href="publication.html">Publication</a></li>
-          <li><a href="research.html">Research/Software</a></li>
-          <li><a href="sponsor.html">Sponsors</a></li>
-          <li><a href="contact.html">Join us</a></li>
+          <li><a href="publication.html">Publications</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="contact.html" class="btn btn-outline-dark btn-sm px-3">Join Us</a></li>
         </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
+      </nav>
     </div>
-  </header><!-- End Header -->
+  </header>
 
+  <section id="join" class="py-5" style="margin-top: 100px; background-color: #f9fbfd;">>
+    <div class="container text-center">
+      <h2 class="fw-bold mb-4" data-aos="fade-up">Join Us</h2>
+      <p class="mb-4 fs-5">Interested in research with us at USC? Select your status below to apply!</p>
 
-  <main id="main">
-    <section id="people" class="people">
-      <div class="container">
-        <div class="inner">
-            <header id="joinus">
-                <h2 data-aos="fade-up"><b>Join Us</b></h2>
-            </header>
-            <div class="input-group">
-              <span>
-                <font size="+2">
-                  <b>Prospective Students:</b> at USC &amp; interested in research positions?&nbsp;&nbsp;
-                </font>
-              </span>
-              <span style="width:0;vertical-align:bottom;" class="input-group-btn">
-                <div class="dropdown" style="height: 300px">
-                  <button class="btn btn-secondary dropdown-toggle btn-xs" id="studentTypeDropdown" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <font size=+1>I am a</font>
-                    <span class="caret"></span>
-                  </button>
-                  <ul class="dropdown-menu" aria-labelledby="studentTypeDropdown">
-                    <li><a class="dropdown-item" href="https://goo.gl/forms/yq4fht7bTLAWbrdx2">USC undergrad</a></li>
-                    <li><a class="dropdown-item" href="https://forms.gle/3hohkVbbZkrmz4mF6">USC MS student</a></li>
-                    <li><a class="dropdown-item" href="https://goo.gl/forms/3CZSyHnjOeGGsSEz1">USC PhD student</a></li>
-                    <li><a class="dropdown-item" href="https://goo.gl/forms/yZPBwqoZM9tQqPuB3">PhD applicant</a></li>
-                    <li><a class="dropdown-item" href="https://goo.gl/forms/Wx6Kgkk0oFnSUpzi1">Other</a></li>
-                  </ul>
-                </div>
-            </span>
-            </div>
+      <div class="row justify-content-center g-3">
+        <div class="col-12 col-sm-6 col-md-4">
+          <a href="https://goo.gl/forms/yq4fht7bTLAWbrdx2" class="btn btn-outline-primary w-100 py-3 shadow-sm" target="_blank">
+            USC Undergraduate
+          </a>
         </div>
-      </div>
-    </section><!-- End About Section -->
-  </main>
-
-    <!-- ======= Footer ======= -->
-  <footer id="footer" class="footer">
-
-    <div class="footer-top">
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-5 col-6 footer-contact text-center text-md-start">
-            <h4>Contact Us</h4>
-            <p>
-              4676 Admiralty Way, Marina Del Ray, CA 90292 <br>
-              <strong>Email:</strong> jpujara@isi.edu<br>
-            </p>
-          </div>
-
+        <div class="col-12 col-sm-6 col-md-4">
+          <a href="https://forms.gle/3hohkVbbZkrmz4mF6" class="btn btn-outline-primary w-100 py-3 shadow-sm" target="_blank">
+            USC Master's Student
+          </a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+          <a href="https://goo.gl/forms/3CZSyHnjOeGGsSEz1" class="btn btn-outline-primary w-100 py-3 shadow-sm" target="_blank">
+            USC PhD Student
+          </a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+          <a href="https://goo.gl/forms/yZPBwqoZM9tQqPuB3" class="btn btn-outline-primary w-100 py-3 shadow-sm" target="_blank">
+            PhD Applicant
+          </a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+          <a href="https://goo.gl/forms/Wx6Kgkk0oFnSUpzi1" class="btn btn-outline-secondary w-100 py-3 shadow-sm" target="_blank">
+            Other
+          </a>
         </div>
       </div>
     </div>
+  </section>
 
 
-  </footer><!-- End Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+<!-- ======= Footer ======= -->
+<footer class="bg-dark text-white py-4">
+  <div class="container text-center">
+    <p class="mb-1">Contact: jpujara@isi.edu</p>
+    <small>&copy; 2025 JAUNTS Lab @ USC ISI</small>
+  </div>
+</footer>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-  <script src="assets/vendor/jquery.min.js"></script>
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<!-- Vendor JS Files -->
+<script src="assets/vendor/purecounter/purecounter.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
+<script src="assets/vendor/jquery.min.js"></script>
 
 
 </body>
 
+<style>
+</style>
+
 </html>
+

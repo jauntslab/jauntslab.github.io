@@ -1,0 +1,30 @@
+[
+  {
+    "date": "May 2024",
+    "text": "Congratulations to Dong-Ho Lee on his PhD graduation!",
+    "links": [
+      {
+        "keyword": "Dong-Ho Lee",
+        "url": "http://dongholee.com/"
+      }
+    ]
+  },
+  {
+    "date": "May 2024",
+    "text": "Congratulations to Kexuan Sun, Pei Zhou, and Avijit Thawani on their PhD graduation!",
+    "links": [
+      {
+        "keyword": "Kexuan Sun",
+        "url": "http://www.kianasun.com/"
+      },
+      {
+        "keyword": "Pei Zhou",
+        "url": "https://shaoxia57.github.io/"
+      },
+      {
+        "keyword": "Avijit Thawani",
+        "url": "https://thawani.netlify.app/v0"
+      }
+    ]
+  }
+]

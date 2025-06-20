@@ -6,24 +6,49 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="Jaunts Lab" name="author">
 
-  <title>Jaunts Laboratory</title>
-  <meta content="Jaunts Laboratory" name="description">
-  <meta content="jaunts, jay pujara, usc, knowledge graph, usc isi, avijit thawani, pegah jandaghi, kexuan sun, pei zhou, dong-ho lee, kian ahrabian" name="keywords">
+  <title>JAUNTS Lab | USC ISI | Knowledge Graphs, NLP, Reasoning</title>
+  <meta name="description" content="JAUNTS Lab at USC ISI, led by Prof. Jay Pujara, conducts research in Knowledge Graphs, NLP, Commonsense Reasoning, and Responsible AI.">
+  <meta name="keywords" content="JAUNTS Lab, Jay Pujara, USC, ISI, Knowledge Graph, NLP, Commonsense Reasoning, AI Research, Natural Language Processing, Responsible AI, USC ISI Lab, Kian Ahrabian, Eric Boxer, Yifan Jiang, Dong-Ho Lee, Pei Zhou, Avijit Thawani, Kexuan Sun">
 
-  <!-- TYPE BELOW IS PROBABLY: 'website' or 'article' or look on https://ogp.me/#types -->
-  <meta property="og:type" content='website'/>
+  <!-- Open Graph -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="JAUNTS Lab | USC ISI"/>
+  <meta property="og:description" content="Research in knowledge representation, language understanding, and AI for social good. Led by Prof. Jay Pujara at USC ISI."/>
 
-  <link href="images/favicon.png" rel="icon">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="JAUNTS Lab @ USC ISI">
+  <meta name="twitter:description" content="NLP, Knowledge Graphs, Commonsense AI, and Responsible Machine Learning research.">
+
+  <!-- Schema.org Organization (Structured Data) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ResearchOrganization",
+    "name": "JAUNTS Lab",
+    "url": "https://www.jauntslab.org/",
+    "logo": "https://www.jauntslab.org/images/logo.png",
+    "department": {
+      "@type": "CollegeOrUniversity",
+      "name": "University of Southern California"
+    },
+    "member": [
+      {
+        "@type": "Person",
+        "name": "Jay Pujara",
+        "jobTitle": "Professor",
+        "url": "https://www.jaypujara.org"
+      }
+    ]
+  }
+  </script>
 
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <!-- <link href="assets/vendor/aos/aos.css" rel="stylesheet"> -->
@@ -44,108 +69,135 @@
 
   <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top">
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-
-      <nav id="navbar" class="navbar" style="color: white">
-        <ul  style="color: white">
-          <li><a href="index.html">Jaunts Lab</a></li>
+    <div class="container d-flex align-items-center justify-content-between py-3">
+      <a href="index.html" class="logo fw-bold text-dark" style="font-size: 24px;">JAUNTS Lab</a>
+      <nav class="navbar d-none d-md-block">
+        <ul class="d-flex gap-4 list-unstyled mb-0">
           <li><a href="people.html">People</a></li>
-          <li><a href="publication.html">Publication</a></li>
-          <li><a href="research.html">Research/Software</a></li>
-          <li><a href="sponsor.html">Sponsors</a></li>
-          <li><a href="contact.html">Join us</a></li>
+          <li><a href="publication.html">Publications</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="contact.html" class="btn btn-outline-dark btn-sm px-3">Join Us</a></li>
         </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
+      </nav>
     </div>
-  </header><!-- End Header -->
+  </header>
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="hero d-flex align-items-center" style="background-attachment: fixed; background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url('images/banner.jpeg'); background-position: center;">
-    <div class="container">
-      <div class="row">
-          <div class="justify-content-center">
-            <h1 data-aos="fade-up" style="color: black; text-align: center">JAUNTS @ USC ISI</h1>
-            <h2 data-aos="fade-up" data-aos-delay="400" style="color: black; text-align: center">Jay's Academically Unrelenting & Notably Thoughtful Students</h2>
-          </div>
-      </div>
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="d-flex align-items-center" style="min-height: 100vh; background: linear-gradient(rgba(255,255,255,0.95), rgba(255,255,255,0.95)), url('images/banner.jpeg') center/cover no-repeat;">
+  <div class="container text-center">
+    <h1 class="fw-bold mb-3" style="font-size: 3rem;">JAUNTS @ USC ISI</h1>
+    <p class="text-secondary mb-4" style="font-size: 1.4rem;">Jay's Academically Unrelenting & Notably Thoughtful Students</p>
+
+    <p class="mx-auto" style="max-width: 800px; font-size: 1.25rem; line-height: 1.8;">
+      We are a research group led by
+      <a href="https://www.jaypujara.org/" target="_blank">Prof. Jay Pujara</a> at
+      <a href="https://www.usc.edu" target="_blank">USC</a>, developing intelligent systems that understand the world
+      through structured knowledge and unstructured data.
+      Our work spans <strong>Knowledge Graphs</strong>, <strong>Dialogue</strong>, <strong>Commonsense Reasoning</strong>, and more.
+    </p>
+
+    <a href="#news" class="btn btn-primary btn-lg mt-5 px-4 py-2">Explore Our Latest News</a>
+  </div>
+</section>
+<!-- End Hero -->
+
+<section id="news" class="py-5" style="background-color: #f9fbfd;">
+  <div class="container">
+    <h2 class="text-center mb-5">
+      <i class="bi bi-megaphone-fill text-primary"></i> <b>Latest News</b>
+    </h2>
+    <div id="news-grid" class="row g-4 justify-content-center"></div>
+
+    <div class="text-center mt-4">
+      <a href="news.html" class="btn btn-outline-primary">See All News</a>
     </div>
-  </section><!-- End Hero -->
+  </div>
+</section>
 
-  <main id="main">
-    <!-- ======= About Section ======= -->
-    <section id="overview" class="overview">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
-            <div class="row">
-              <img src="images/logo.png" class="img-fluid" alt="">
-              <p class="intro text" style="text-align: justify; margin-top:30px; line-height: 1.5; font-size: 17px" >
-                  JAUNTS@<a href="https://www.usc.edu" target="_target">USC</a> is a group of researchers led by <a href="https://www.jaypujara.org/" target="_target">Prof. Jay Pujara</a>
-                  working on techniques for understanding massive amount of unstructured data and guiding machines with structured knowledge
-                  to develop intelligent systems that can demonstrate the deep understanding of the world.
-                  <br><br>
-                  Research Keywords: Knowledge Graph, Dialogue, Natural Language Processing, Table Understanding, Commonsense Reasoning
-              </p>
-            </div>
+<!-- ======= Footer ======= -->
+<footer class="bg-dark text-white py-4">
+  <div class="container text-center">
+    <p class="mb-1">Contact: jpujara@isi.edu</p>
+    <small>&copy; 2025 JAUNTS Lab @ USC ISI</small>
+  </div>
+</footer>
+
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<!-- Vendor JS Files -->
+<script src="assets/vendor/purecounter/purecounter.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
+<script src="assets/vendor/jquery.min.js"></script>
+
+<script>
+  fetch('data/news.json')
+    .then(res => res.json())
+    .then(newsList => {
+      const container = document.getElementById('news-grid');
+
+      // 최신 뉴스 4개만 추출
+      const latestNews = newsList.slice(0, 4);
+
+      latestNews.forEach(item => {
+        const col = document.createElement('div');
+        col.className = 'col-md-6 col-lg-5';
+
+        let text = item.text;
+
+        if (item.links && Array.isArray(item.links)) {
+          item.links.forEach(link => {
+            if (link.keyword && link.url) {
+              const hyperlink = `<a href="${link.url}" target="_blank" rel="noopener noreferrer">${link.keyword}</a>`;
+              const regex = new RegExp(link.keyword, 'g');
+              text = text.replace(regex, hyperlink);
+            }
+          });
+        }
+
+        col.innerHTML = `
+          <div class="news-card p-4 shadow-sm h-100 bg-white border rounded">
+            <div class="news-date text-primary fw-bold mb-2">${item.date}</div>
+            <div class="news-text text-muted">${text}</div>
           </div>
-          <div class="col-lg-6 d-flex flex-column"  style="background-color: rgba(204, 229, 255, .2); padding: 30px;">
-            <div class="content">
-              <h2 data-aos="fade-up"><b>News</b></h2>
-                  <div class="content" style="overflow-y: scroll; max-height: 250px;" id="div-news">
-                    <ul>
-                      <li><b style="color: #3597d4">10/2023</b>: JAUNTS lab has 3 papers (main conference) accepted at <b>EMNLP 2023</b>, with topics about temporal knowledge graph & in-context learning, data creation using LLM, and norm violation detection in live-streaming chat.</li>
-                      <li><b style="color: #3597d4">05/2023</b>: JAUNTS lab has 2 papers (poster, system demonstration) accepted at <b>ACL 2023</b>, with topics about theory-of-minds and explanation-based model debugging.</li>
-                      <li><b style="color: #3597d4">10/2022</b>: JAUNTS lab has 1 long paper (dialogue) accepted at <b>EMNLP 2022</b>.</li>
-                      <li><b style="color: #3597d4">02/2022</b>: JAUNTS lab has 3 long papers accepted at <b>ACL 2022</b> and 1 short paper accepted at <b>SIGIR 2022</b>, with topics spanning over common-grounded dialogues, information extraction, visual language, and knowledge graphs.</li>
-                    </ul>
-                  </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section><!-- End About Section -->
-  </main>
-
-    <!-- ======= Footer ======= -->
-  <footer id="footer" class="footer">
-
-    <div class="footer-top">
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-5 col-6 footer-contact text-center text-md-start">
-            <h4>Contact Us</h4>
-            <p>
-              4676 Admiralty Way, Marina Del Ray, CA 90292 <br>
-              <strong>Email:</strong> jpujara@isi.edu<br>
-            </p>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-
-  </footer><!-- End Footer -->
-
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-  <script src="assets/vendor/jquery.min.js"></script>
-
-
+        `;
+        container.appendChild(col);
+      });
+    })
+    .catch(err => console.error("Failed to load news:", err));
+</script>
 
 </body>
 
+<style>
+  .news-card {
+    border-left: 5px solid #1a73e8;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .news-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  }
+
+  .news-date {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .news-text {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+</style>
+
 </html>
+

@@ -1,0 +1,73 @@
+[
+  {
+    "name": "Jay Pujara",
+    "image": "images/members/jay.png",
+    "website": "https://www.jaypujara.org",
+    "github": "",
+    "twitter": "",
+    "category": "Faculty"
+  },
+  {
+    "name": "Avijit Thawani",
+    "image": "images/members/avijit.jpeg",
+    "website": "https://thawani.netlify.app/v0",
+    "github": "",
+    "twitter": "https://x.com/thawani_avijit",
+    "category": "Alumni",
+    "note": "Research Scientist @ Otter.ai"
+  },
+  {
+    "name": "Kexuan Sun",
+    "image": "images/members/kexuan.jpeg",
+    "website": "http://www.kianasun.com/",
+    "github": "https://github.com/kianasun",
+    "twitter": "",
+    "category": "Alumni",
+    "note": "Applied Scientist @ Amazon"
+  },
+  {
+    "name": "Pei Zhou",
+    "image": "images/members/pei.png",
+    "website": "https://shaoxia57.github.io/",
+    "github": "https://github.com/shaoxia57",
+    "twitter": "https://x.com/peizNLP",
+    "category": "Alumni",
+    "note": "Senior Applied Scientist @ Microsoft"
+  },
+  {
+    "name": "Dong-Ho Lee",
+    "image": "images/members/dongho.jpg",
+    "website": "https://dongholee.com/",
+    "github": "https://github.com/danny911kr",
+    "twitter": "https://x.com/Dongho_Lee_",
+    "category": "Alumni",
+    "note": ""
+  },
+  {
+    "name": "Kian Ahrabian",
+    "image": "images/members/kian.png",
+    "website": "",
+    "github": "",
+    "twitter": "https://x.com/kahrabian",
+    "category": "PhD",
+    "note": ""
+  },
+  {
+    "name": "Eric Boxer",
+    "image": "images/members/eric.png",
+    "website": "https://ecboxer.github.io/",
+    "github": "https://github.com/ecboxer",
+    "twitter": "https://x.com/emotioncottage",
+    "category": "PhD",
+    "note": ""
+  },
+  {
+    "name": "Yifan Jiang",
+    "image": "images/members/yifan.png",
+    "website": "",
+    "github": "https://github.com/1171-jpg",
+    "twitter": "https://x.com/yifanji24618785",
+    "category": "PhD",
+    "note": ""
+  }
+]

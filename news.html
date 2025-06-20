@@ -82,35 +82,23 @@
     </div>
   </header>
 
-    <section id="people" class="py-5" style="margin-top: 100px; background-color: #f9fbfd;">
-      <div class="container">
-        <div id="faculty-section" class="mb-5">
-          <h3><b>Faculty</b></h3>
-          <div class="row" id="faculty-grid"></div>
-        </div>
-        <div id="phd-section" class="mb-5">
-          <h3><b>Ph.D.</b></h3>
-          <div class="row" id="phd-grid"></div>
-        </div>
-        <div id="ms-section" class="mb-5">
-          <h3><b>Visitor</b></h3>
-          <div class="row" id="ms-grid"></div>
-        </div>
-        <div id="alumni-section">
-          <h3><b>Alumni</b></h3>
-          <div class="row" id="alumni-grid"></div>
-        </div>
-      </div>
-    </section>
+  <!-- ======= News Section ======= -->
+  <section class="py-5" style="margin-top: 100px; background-color: #f9fbfd;">
+    <div class="container">
+      <h2 class="text-center mb-5">
+        <i class="bi bi-megaphone-fill text-primary"></i> <b>All News</b>
+      </h2>
+      <ul id="news-list" class="list-group list-group-flush" style="max-width: 800px; margin: 0 auto;"></ul>
+    </div>
+  </section>
 
-
-<!-- ======= Footer ======= -->
-<footer class="bg-dark text-white py-4">
-  <div class="container text-center">
-    <p class="mb-1">Contact: jpujara@isi.edu</p>
-    <small>&copy; 2025 JAUNTS Lab @ USC ISI</small>
-  </div>
-</footer>
+  <!-- ======= Footer ======= -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+      <p class="mb-1">Contact: jpujara@isi.edu</p>
+      <small>&copy; 2025 JAUNTS Lab @ USC ISI</small>
+    </div>
+  </footer>
 
 <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
@@ -126,97 +114,46 @@
 <!-- Template Main JS File -->
 <script src="assets/js/main.js"></script>
 <script src="assets/vendor/jquery.min.js"></script>
-
 <script>
-  fetch('data/people.json')
+  fetch('data/news.json')
     .then(res => res.json())
-    .then(peopleList => {
-      const containerMap = {
-        Faculty: document.getElementById('faculty-grid'),
-        PhD: document.getElementById('phd-grid'),
-        MS: document.getElementById('ms-grid'),
-        Alumni: document.getElementById('alumni-grid')
-      };
+    .then(newsList => {
+      const list = document.getElementById('news-list');
 
-      peopleList.forEach(person => {
-          const col = document.createElement('div');
-          col.className = "col-6 col-sm-4 col-md-3 text-center mb-4";
+      newsList.forEach(item => {
+        let text = item.text;
 
-          col.innerHTML = `
-            <div class="member-card">
-              <div class="image-cropper">
-                <img src="${person.image}" alt="${person.name}" class="img-fluid">
-              </div>
-              <div class="member-info mt-2">
-                <h5 class="mb-1">${person.name}</h5>
-                ${person.note ? `<p class="text-muted small">${person.note}</p>` : ''}
-              </div>
-              <div class="social d-flex justify-content-center gap-2 mt-1">
-                ${person.website ? `<a href="${person.website}" target="_blank"><i class="bi bi-bootstrap-fill"></i></a>` : ''}
-                ${person.github ? `<a href="${person.github}" target="_blank"><i class="bi bi-github"></i></a>` : ''}
-                ${person.twitter ? `<a href="${person.twitter}" target="_blank"><i class="bi bi-twitter"></i></a>` : ''}
-              </div>
-            </div>
-          `;
+        if (item.links && Array.isArray(item.links)) {
+          item.links.forEach(link => {
+            if (link.keyword && link.url) {
+              const hyperlink = `<a href="${link.url}" target="_blank" rel="noopener noreferrer">${link.keyword}</a>`;
+              const regex = new RegExp(link.keyword, 'g');
+              text = text.replace(regex, hyperlink);
+            }
+          });
+        }
 
-          if (containerMap[person.category]) {
-            containerMap[person.category].appendChild(col);
-          }
-        });
+        const li = document.createElement('li');
+        li.className = 'list-group-item py-3';
+        li.innerHTML = `<span class="text-primary fw-semibold">${item.date}</span> – ${text}`;
+        list.appendChild(li);
+      });
     })
-    .catch(err => console.error("Failed to load people data:", err));
+    .catch(err => console.error("Failed to load news:", err));
 </script>
-
 
 </body>
 
 <style>
-  .image-cropper {
-    width: 150px;
-    height: 150px;
-    overflow: hidden;
-    border-radius: 50%;
-    margin: 0 auto 10px;
-    background-color: #f4f4f4;
+  .list-group-item {
+    background-color: #fff;
+    border: 1px solid #eee;
+    transition: background-color 0.2s ease;
   }
-
-  .image-cropper img {
-    width: 100%;
-    height: auto;
-  }
-
-  h3 {
-    font-size: 1.8rem;
-    font-weight: 700;
-  }
-
-  .member-card h5 {
-    font-size: 1.1rem;
-    font-weight: 600;
-  }
-
-    .member-info p {
-      margin-bottom: 0.3rem;
-      font-size: 0.85rem;
-    }
-
-    .social {
-      margin-top: 0.2rem !important;
-    }
-
-  .social a {
-    font-size: 1.3rem;
-  }
-
-  #people {
-    font-size: 1.05rem;
-  }
-
-  .social a:hover {
-    color: #1a73e8;
+  .list-group-item:hover {
+    background-color: #f1f8ff;
   }
 </style>
-
 
 </html>
 
